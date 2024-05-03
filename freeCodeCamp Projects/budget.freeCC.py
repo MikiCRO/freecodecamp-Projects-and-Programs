@@ -13,6 +13,7 @@ class Category:
  def withdraw(self,amount,description = ""):
   if self.check_funds(amount) is False:
     return False
+   
   else:
     self.ledger.append({"amount": -amount, "description": description})
     return True
