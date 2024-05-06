@@ -57,6 +57,7 @@ class Rectangle():
             return sirina * duzina
         
 class Square(Rectangle):
+    
     def __init__(self,side):
         self._side = side
         
