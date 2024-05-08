@@ -3,6 +3,7 @@ A = list(range(NUMBER_OF_DISKS, 0, -1))
 B = []
 C = []
 
+
 def move(n, source, auxiliary, target):
     if n <= 0:
         return
@@ -18,5 +19,5 @@ def move(n, source, auxiliary, target):
     # move the n - 1 disks that we left on auxiliary onto target
     move(n - 1,  auxiliary, source, target)
               
-# initiate call from source A to target C with auxiliary B
+#  initiate call from source A to target C with auxiliary B.
 move(NUMBER_OF_DISKS, A, B, C)
